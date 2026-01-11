@@ -1,0 +1,25 @@
+{
+  "restaurantId": "65a1b2c3d4e5f67890123456",
+  "restaurantName": "Test Pizza Place",
+  "items": [
+    {
+      "name": "Margherita Pizza",
+      "price": 12.99,
+      "quantity": 2
+    }
+  ],
+  "deliveryAddress": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001"
+  },
+  "contactInfo": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@example.com",
+    "phone": "1234567890"
+  },
+  "paymentMethod": "credit_card",
+  "deliveryType": "delivery"
+}
