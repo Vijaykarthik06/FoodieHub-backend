@@ -5,6 +5,10 @@ const { authMiddleware, adminMiddleware } = require('../middleware/auth');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.json({ success: true, message: 'Orders endpoint' });
+});
+
 // Get user's orders
 router.get('/my-orders', authMiddleware, async (req, res) => {
   try {

@@ -4,6 +4,10 @@ const { authMiddleware } = require('../middleware/auth');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.json({ success: true, message: 'Restaurants endpoint' });
+});
+
 // Get user profile
 router.get('/profile', authMiddleware, async (req, res) => {
   try {

@@ -3,6 +3,10 @@ const Product = require('../models/Product');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.json({ success: true, message: 'Products endpoint' });
+});
+
 // Get all products
 router.get('/', async (req, res) => {
   try {
